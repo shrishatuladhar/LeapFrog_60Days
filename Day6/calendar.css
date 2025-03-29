@@ -1,0 +1,100 @@
+/* calendar.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+.calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e0e0e0;
+    border-radius: 30px;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    padding: 20px;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 40px 60px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.buttons span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.buttons span:hover {
+    box-shadow: inset 8px 8px 16px #bebebe, inset -8px -8px 16px #ffffff;
+}
+
+.buttons span:nth-child(6) {
+    background: #ffcccb;
+    color: #000;
+}
+
+.nav-button {
+    background: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.nav-button:hover {
+    box-shadow: inset 8px 8px 16px #bebebe, inset -8px -8px 16px #ffffff;
+}
+
+.nav-button.prev {
+    margin-right: 10px;
+}
+
+.nav-button.next {
+    margin-left: 10px;
+}
